@@ -61,7 +61,7 @@ plt.savefig('TetherLengthVsGrazing.png')
 
 def plot_goat(tether):
     fig, ax = plt.subplots(figsize=(6,6))
-    plt.gca().set_position([0, 0, 1, 0.8])
+    plt.gca().set_position([0, 0, 1, 0.9])
     ax.fill(np.cos(np.arange(-np.pi,np.pi + 0.01,0.01)),np.sin(np.arange(-np.pi,np.pi + 0.01,0.01)),'g')
     xVals = tether*np.cos(np.arange(-np.pi,np.pi + 0.01,0.01)) - 1
     yVals = tether*np.sin(np.arange(-np.pi,np.pi + 0.01,0.01))
