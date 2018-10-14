@@ -55,7 +55,7 @@ plt.ylabel('Grazing Percentage',fontsize=textSize,fontweight='bold')
 plt.title(str(round(100*targetPortion,1))[:-2] + '% grazing at L = ' + \
 str(round(res['x'][0],4)) + 'R',fontsize=textSize,fontweight='bold')
 plt.tight_layout()
-plt.savefig('TetherLengthVsGrazing.png')
+plt.savefig('TetherLengthVsGrazing.pdf')
 
 """ Gif demonstrating the area grazed by the goat """
 
