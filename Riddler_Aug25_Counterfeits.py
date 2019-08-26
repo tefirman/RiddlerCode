@@ -72,5 +72,6 @@ plt.yticks(np.arange(0,4001,1000))
 plt.xlabel('# of fake bills',fontsize=18,fontweight='bold')
 plt.ylabel('Expected Return ($)',fontsize=18,fontweight='bold')
 plt.legend(['Analytical','Simulation'])
+plt.tight_layout()
 plt.savefig('RiddlerCounterfeitGraph.png')
 
