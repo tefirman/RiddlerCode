@@ -64,9 +64,11 @@ mpl.rcParams['xtick.labelsize'] = 15
 mpl.rcParams['ytick.labelsize'] = 15
 plt.rc('font',weight='bold')
 
-plt.figure()
+plt.figure(figsize=(6,5))
 plt.plot(range(len(expected)),expected)
 plt.plot(range(len(sim_expected)),sim_expected)
+plt.grid(True)
+plt.yticks(np.arange(0,4001,1000))
 plt.xlabel('# of fake bills',fontsize=18,fontweight='bold')
 plt.ylabel('Expected Return ($)',fontsize=18,fontweight='bold')
 plt.legend(['Analytical','Simulation'])
