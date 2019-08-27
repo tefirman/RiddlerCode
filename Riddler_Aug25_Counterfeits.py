@@ -41,6 +41,7 @@ for fakeBills in range(501):
     - logFactorial(numAnalyzed - fakesAnalyzed) \
     - logFactorial(realBills - numAnalyzed + fakesAnalyzed))
     for fakesAnalyzed in range(max(numAnalyzed - realBills,0),min(numAnalyzed,fakeBills) + 1)]
+    choose_k = [0 for ind in range(max(numAnalyzed - realBills,0))] + choose_k
     choose_k = np.array(choose_k)/sum(choose_k)
     probs.append(sum([choose_k[ind]*(1 - detectionProb)**ind for ind in range(len(choose_k))]))
     winnings.append(100*(realBills + fakeBills))
